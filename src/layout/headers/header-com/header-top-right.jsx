@@ -13,7 +13,7 @@ function Language({active,handleActive}) {
         className="tp-header-lang-toggle"
         id="tp-header-lang-toggle"
       >
-        English
+        Tiếng Việt
       </span>
       <ul className={active === 'lang' ? "tp-lang-list-open" : ""}>
         <li>
@@ -39,7 +39,7 @@ function Currency({active,handleActive}) {
         className="tp-header-currency-toggle"
         id="tp-header-currency-toggle"
       >
-        USD
+        VNĐ
       </span>
       <ul className={active === 'currency' ? "tp-currency-list-open" : ""}>
         <li>
@@ -76,21 +76,21 @@ function ProfileSetting({active,handleActive}) {
         className="tp-header-setting-toggle"
         id="tp-header-setting-toggle"
       >
-        Setting
+        Cài đặt
       </span>
       <ul className={active === 'setting' ? "tp-setting-list-open" : ""}>
         <li>
-          <Link href="/profile">My Profile</Link>
+          <Link href="/profile">Thông tin cá nhân</Link>
         </li>
         <li>
-          <Link href="/wishlist">Wishlist</Link>
+          <Link href="/wishlist">Danh sách yêu thích</Link>
         </li>
         <li>
-          <Link href="/cart">Cart</Link>
+          <Link href="/cart">Giỏ hàng</Link>
         </li>
         <li>
-          {!user?.name &&<Link href="/login" className="cursor-pointer">Login</Link>}
-          {user?.name &&<a onClick={handleLogout} className="cursor-pointer">Logout</a>}
+          {!user?.name &&<Link href="/login" className="cursor-pointer">Đăng nhập</Link>}
+          {user?.name &&<a onClick={handleLogout} className="cursor-pointer">Đăng xuất</a>}
         </li>
       </ul>
     </div>

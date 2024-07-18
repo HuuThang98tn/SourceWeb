@@ -7,7 +7,7 @@ const menu_data = [
   {
     id: 1,
     homes: true,
-    title: 'Home',
+    title: 'Trang chủ',
     link: '/',
     home_pages: [
       {
@@ -35,85 +35,85 @@ const menu_data = [
   {
     id: 2,
     products: true,
-    title: 'Products',
+    title: 'Sản phẩm',
     link: '/shop',
     product_pages: [
       {
-        title: 'Shop Page',
+        title: 'Danh mục',
         link: '/shop',
         mega_menus: [
-          { title: 'Only Categories', link: '/shop-category' },
-          { title: 'Shop Grid with Sideber', link: '/shop' },
-          { title: 'Product Details', link: '/product-details' },
+          { title: 'Danh mục', link: '/shop-category' },
+          { title: 'Lọc sản phẩm', link: '/shop' },
+          { title: 'Chi tiết sản phẩm', link: '/product-details' },
         ]
       },
       {
-        title: 'Products',
+        title: 'Sản phẩm',
         link: '/product-details',
         mega_menus: [
-          { title: 'Product Simple', link: '/product-details' },
-          { title: 'With Video', link: '/product-details-video' },
-          { title: 'With Countdown Timer', link: '/product-details-countdown' },
-          { title: 'Variations Swatches', link: '/product-details-swatches' },
+          { title: 'Sản phẩm đơn lẻ', link: '/product-details' },
+          { title: 'Sản phẩm có video ', link: '/product-details-video' },
+          { title: 'Sản phẩm giảm giá', link: '/product-details-countdown' },
+          { title: 'Sản phẩm lựa chọn', link: '/product-details-swatches' },
         ]
       },
       {
-        title: 'eCommerce',
+        title: 'Thương mại điện tử',
         link: '/shop',
         mega_menus: [
-          { title: 'Shopping Cart', link: '/cart' },
-          { title: 'Compare', link: '/compare' },
-          { title: 'Wishlist', link: '/wishlist' },
-          { title: 'Checkout', link: '/checkout' },
-          { title: 'My account', link: '/profile' },
+          { title: 'Giỏ hàng', link: '/cart' },
+          { title: 'So sánh', link: '/compare' },
+          { title: 'Danh sách yêu thích', link: '/wishlist' },
+          { title: 'Thanh toán', link: '/checkout' },
+          { title: 'Thông tin tài khoản', link: '/profile' },
         ]
       },
       {
-        title: 'More Pages',
+        title: 'Trang thêm',
         link: '/shop',
         mega_menus: [
-          { title: 'Login', link: '/login' },
-          { title: 'Register', link: '/register' },
-          { title: 'Forgot Password', link: '/forgot' },
-          { title: '404 Error', link: '/404' },
+          { title: 'Đăng nhập', link: '/login' },
+          { title: 'Đăng ký', link: '/register' },
+          { title: 'Quên mật khẩu', link: '/forgot' },
+          { title: '404 Lỗi', link: '/404' },
         ]
       },
     ]
   },
-  {
-    id: 3,
-    sub_menu: true,
-    title: 'Shop',
-    link: '/shop',
-    sub_menus: [
-      { title: 'Shop', link: '/shop' },
-      { title: 'Right Sidebar', link: '/shop-right-sidebar' },
-      { title: 'Hidden Sidebar', link: '/shop-hidden-sidebar' },
-    ],
-  },
+  // {
+  //   id: 3,
+  //   sub_menu: true,
+  //   title: 'Cửa Hàng',
+  //   link: '/shop',
+  //   sub_menus: [
+  //     { title: 'Cửa Hàng', link: '/shop' },
+  //     { title: 'Danh mục lọc bên phải', link: '/shop-right-sidebar' },
+  //     { title: 'Ẩn danh mục lọc', link: '/shop-hidden-sidebar' },
+  //   ],
+  // },
   {
     id: 4,
     single_link: true,
-    title: 'Coupons',
+    title: 'Ưu Đãi',
     link: '/coupon',
   },
   {
     id: 5,
     sub_menu: true,
-    title: 'Blog',
+    title: 'Blogs',
     link: '/blog',
     sub_menus: [
-      { title: 'Blog Standard', link: '/blog' },
-      { title: 'Blog Grid', link: '/blog-grid' },
-      { title: 'Blog List', link: '/blog-list' },
-      { title: 'Blog Details', link: '/blog-details' },
-      { title: 'Blog Details Full Width', link: '/blog-details-2' },
+      { title: 'Blog Tiêu chuẩn', link: '/blog' },
+      { title: 'Blog dạng lưới', link: '/blog-grid' },
+      { title: 'Danh sách Blog', link: '/blog-list' },
+      { title: 'Chi tiết Blogs', link: '/blog-details' },
+      { title: 'Chi tiết toàn màn hình', link: '/blog-details-2' },
     ]
   },
   {
     id: 6,
     single_link: true,
-    title: 'Contact',
+    title: 'Liên Hệ',
     link: '/contact',
   },
 ]
