@@ -29,7 +29,7 @@ const CheckoutOrderArea = ({ checkoutData }) => {
         <ul>
           {/*  header */}
           <li className="tp-order-info-list-header">
-            <h4>Product</h4>
+            <h4>Sản phẩm</h4>
             <h4>Total</h4>
           </li>
 

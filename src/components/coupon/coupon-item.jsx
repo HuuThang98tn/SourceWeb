@@ -13,7 +13,7 @@ const CouponItem = ({ coupon, handleCopied, copiedCode, copied }) => {
       <div className="tp-coupon-item-left d-sm-flex align-items-center">
         <div className="tp-coupon-thumb">
           <a href="#">
-            <Image src={coupon.logo} alt="logo" width={120} height={120}  />
+            <Image src={coupon.logo} alt="logo" width={120} height={120} />
           </a>
         </div>
         <div className="tp-coupon-content">
@@ -21,23 +21,21 @@ const CouponItem = ({ coupon, handleCopied, copiedCode, copied }) => {
           <p className="tp-coupon-offer mb-15">
             <span>{coupon.discountPercentage}%</span>Off
           </p>
-          <div
-            className="tp-coupon-countdown"
-          >
+          <div className="tp-coupon-countdown">
             {dayjs().isAfter(dayjs(coupon.endTime)) ? (
               <div className="tp-coupon-countdown-inner">
                 <ul>
                   <li>
-                    <span>{0}</span> Day
+                    <span>{0}</span> Ngày
                   </li>
                   <li>
-                    <span>{0}</span> Hrs
+                    <span>{0}</span> Giờ
                   </li>
                   <li>
-                    <span>{0}</span> Min
+                    <span>{0}</span> Phút
                   </li>
                   <li>
-                    <span>{0}</span> Sec
+                    <span>{0}</span> Giây
                   </li>
                 </ul>
               </div>
@@ -50,14 +48,7 @@ const CouponItem = ({ coupon, handleCopied, copiedCode, copied }) => {
       <div className="tp-coupon-item-right pl-20">
         <div className="tp-coupon-status mb-10 d-flex align-items-center">
           <h4>
-            Coupon{" "}
-            <span
-              className={
-                dayjs().isAfter(dayjs(coupon.endTime)) ? "in-active" : "active"
-              }
-            >
-              {dayjs().isAfter(dayjs(coupon.endTime)) ? "Inactive" : "Active"}
-            </span>
+            Voucher <span className={dayjs().isAfter(dayjs(coupon.endTime)) ? "in-active" : "active"}>{dayjs().isAfter(dayjs(coupon.endTime)) ? "Hết hạn" : "Còn hạn"}</span>
           </h4>
           <div className="tp-coupon-info-details">
             <span>
@@ -65,25 +56,14 @@ const CouponItem = ({ coupon, handleCopied, copiedCode, copied }) => {
             </span>
             <div className="tp-coupon-info-tooltip transition-3">
               <p>
-                *This coupon code will apply on{" "}
-                <span>Grocery type products</span> and when you shopping more
-                than <span>${coupon.minimumAmount}</span>
+                *Mã giảm giá này sẽ được áp dụng vào <span>Các loại sản phẩm </span> khi bạn mua sắm nhiều hơn <span>${coupon.minimumAmount}</span>
               </p>
             </div>
           </div>
         </div>
         <div className="tp-coupon-date">
-          <CopyToClipboard
-            text={coupon.couponCode}
-            onCopy={() => handleCopied(coupon.couponCode)}
-          >
-            <button>
-              {copied && coupon.couponCode === copiedCode ? (
-                <span>Copied!</span>
-              ) : (
-                <span>{coupon.couponCode}</span>
-              )}
-            </button>
+          <CopyToClipboard text={coupon.couponCode} onCopy={() => handleCopied(coupon.couponCode)}>
+            <button>{copied && coupon.couponCode === copiedCode ? <span>Copied!</span> : <span>{coupon.couponCode}</span>}</button>
           </CopyToClipboard>
         </div>
       </div>

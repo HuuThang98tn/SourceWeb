@@ -28,9 +28,9 @@ const CompareArea = () => {
             <div className="col-xl-12">
               {compareItems.length === 0 && (
                 <div className="text-center pt-50">
-                  <h3>No Compare Items Found</h3>
+                  <h3>Không tìm thấy sản phẩm</h3>
                   <Link href="/shop" className="tp-cart-checkout-btn mt-20">
-                    Continue Shipping
+                    Tiếp tục mua sắm
                   </Link>
                 </div>
               )}
@@ -39,7 +39,7 @@ const CompareArea = () => {
                   <table className="table">
                     <tbody>
                       <tr>
-                        <th>Product</th>
+                        <th>Sản phẩm</th>
                         {compareItems.map(item => (
                           <td key={item._id} className="">
                             <div className="tp-compare-thumb">
@@ -60,7 +60,7 @@ const CompareArea = () => {
                       </tr>
                       {/* Description */}
                       <tr>
-                        <th>Description</th>
+                        <th>Miêu tả</th>
                         {compareItems.map(item => (
                           <td key={item._id}>
                             <div className="tp-compare-desc">
@@ -74,7 +74,7 @@ const CompareArea = () => {
                       </tr>
                       {/* Price */}
                       <tr>
-                        <th>Price</th>
+                        <th>Giá tiền</th>
                         {compareItems.map(item => (
                           <td key={item._id}>
                             <div className="tp-compare-price">
@@ -98,7 +98,7 @@ const CompareArea = () => {
                       </tr>
                       {/* Rating */}
                       <tr>
-                        <th>Rating</th>
+                        <th>Đánh giá</th>
                         {compareItems.map(item => (
                           <td key={item._id}>
                             <div className="tp-compare-rating">
@@ -114,7 +114,7 @@ const CompareArea = () => {
                       </tr>
                       {/* Remove */}
                       <tr>
-                        <th>Remove</th>
+                        <th>Xoá</th>
                         {compareItems.map(item => (
                           <td key={item._id}>
                             <div className="tp-compare-remove">

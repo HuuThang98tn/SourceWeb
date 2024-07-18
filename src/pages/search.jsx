@@ -152,7 +152,7 @@ export default function SearchPage({ query }) {
 
   return (
     <Wrapper>
-      <SEO pageTitle="Wishlist" />
+      <SEO pageTitle="Danh sách yêu thích" />
       <HeaderTwo style_2={true} />
       <CommonBreadcrumb title="Search Products" subtitle="Search Products" />
       {content}

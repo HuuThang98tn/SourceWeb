@@ -9,7 +9,7 @@ import BlogGridArea from "@/components/blog/blog-grid/blog-grid-area";
 const BlogGridPage = () => {
   return (
     <Wrapper>
-      <SEO pageTitle="Blog Grid" />
+      <SEO pageTitle="Blogs Grid" />
       <HeaderTwo style_2={true} />
       <SectionTitle/>
       <BlogGridArea/>

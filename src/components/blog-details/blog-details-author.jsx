@@ -16,7 +16,7 @@ const BlogDetailsAuthor = () => {
         </a>
       </div>
       <div className="tp-postbox-details-author-content">
-        <span>Written by</span>
+        <span>Tác giả</span>
         <h5 className="tp-postbox-details-author-title">
           <a href="#">Theodore Handle</a>
         </h5>

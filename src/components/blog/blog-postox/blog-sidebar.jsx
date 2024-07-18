@@ -29,7 +29,7 @@ const BlogSidebar = () => {
 
         {/* about  */}
         <div className="tp-sidebar-widget mb-35">
-          <h3 className="tp-sidebar-widget-title">About me</h3>
+          <h3 className="tp-sidebar-widget-title">Về chúng tôi</h3>
           <div className="tp-sidebar-widget-content">
             <div className="tp-sidebar-about">
               <div className="tp-sidebar-about-thumb mb-25">
@@ -54,7 +54,7 @@ const BlogSidebar = () => {
 
         {/* <!-- latest post start --> */}
         <div className="tp-sidebar-widget mb-35">
-          <h3 className="tp-sidebar-widget-title">Latest Posts</h3>
+          <h3 className="tp-sidebar-widget-title">Bài viết mới nhất</h3>
           <div className="tp-sidebar-widget-content">
             <div className="tp-sidebar-blog-item-wrapper">
               {latest_post.map(b => (
@@ -81,15 +81,15 @@ const BlogSidebar = () => {
 
         {/* <!-- categories start --> */}
         <div className="tp-sidebar-widget widget_categories mb-35">
-          <h3 className="tp-sidebar-widget-title">Categories</h3>
+          <h3 className="tp-sidebar-widget-title">Danh mục</h3>
           <div className="tp-sidebar-widget-content">
             <ul>
-              <li><Link href="/blog">Farming <span>(12)</span></Link></li>
-              <li><Link href="/blog">Crisp Bread & Cake <span>(6)</span></Link></li>
-              <li><Link href="/blog">Milk & Meat <span>(2)</span></Link></li>
-              <li><Link href="/blog">Organic Fruits <span>(8)</span></Link></li>
-              <li><Link href="/blog">Sea Foods <span>(0)</span></Link></li>
-              <li><Link href="/blog">Vegetable <span>(3)</span></Link></li>
+              <li><Link href="/blog">Nông trại <span>(12)</span></Link></li>
+              <li><Link href="/blog">Bánh mì và bánh ngọt <span>(6)</span></Link></li>
+              <li><Link href="/blog">Sữa và thịt <span>(2)</span></Link></li>
+              <li><Link href="/blog">Hoa quả <span>(8)</span></Link></li>
+              <li><Link href="/blog">Hải sản <span>(0)</span></Link></li>
+              <li><Link href="/blog">Rau củ quả <span>(3)</span></Link></li>
             </ul>
           </div>
         </div>
@@ -97,7 +97,7 @@ const BlogSidebar = () => {
 
         {/* <!-- tag cloud start --> */}
         <div className="tp-sidebar-widget mb-35">
-          <h3 className="tp-sidebar-widget-title">Popular Tags</h3>
+          <h3 className="tp-sidebar-widget-title">Tags phổ biến</h3>
           <div className="tp-sidebar-widget-content tagcloud">
             <a href="#">Summer</a>
             <a href="#">Vintage</a>

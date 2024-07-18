@@ -12,16 +12,18 @@ const ForgotArea = () => {
           <div className="col-xl-6 col-lg-8">
             <div className="tp-login-wrapper">
               <div className="tp-login-top text-center mb-30">
-                <h3 className="tp-login-title">Reset Passowrd</h3>
-                <p>Enter your email address to request password reset.</p>
+                <h3 className="tp-login-title">Đặt lại mật khẩu</h3>
+                <p>Nhập địa chỉ email của bạn để yêu cầu đặt lại mật khẩu.</p>
               </div>
               <div className="tp-login-option">
                 {/* form start */}
-                <ForgotForm/>
+                <ForgotForm />
                 {/* form end */}
                 <div className="tp-login-suggetions d-sm-flex align-items-center justify-content-center">
                   <div className="tp-login-forgot">
-                    <span>Remeber Passowrd? <Link href="/login"> Login</Link></span>
+                    <span>
+                      Nhớ mật khẩu? <Link href="/login"> Đăng nhập</Link>
+                    </span>
                   </div>
                 </div>
               </div>

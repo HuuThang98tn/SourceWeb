@@ -10,7 +10,7 @@ import ContactMap from "@/components/contact/contact-map";
 const ContactPage = () => {
   return (
     <Wrapper>
-      <SEO pageTitle="Contact" />
+      <SEO pageTitle="Liên hệ" />
       <HeaderTwo style_2={true} />
       <ContactBreadcrumb />
       <ContactArea/>

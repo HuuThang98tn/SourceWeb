@@ -9,7 +9,7 @@ import blogData from "@/data/blog-data";
 const BlogDetailsPage = () => {
   return (
     <Wrapper>
-      <SEO pageTitle="Blog Details" />
+      <SEO pageTitle="Chi tiết Blogs" />
       <HeaderTwo style_2={true} />
       <BlogDetailsArea blog={blogData[4]} />
       <Footer primary_style={true} />

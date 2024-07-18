@@ -185,7 +185,7 @@ export const mobile_menu = [
     title: 'More Pages',
     link: '/login',
     sub_menus: [
-      { title: 'Login', link: '/login' },
+      { title: '"Đăng nhập"', link: '/login' },
       { title: 'Register', link: '/register' },
       { title: 'Forgot Password', link: '/forgot' },
       { title: '404 Error', link: '/404' },

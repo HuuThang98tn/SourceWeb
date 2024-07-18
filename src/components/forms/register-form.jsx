@@ -49,44 +49,26 @@ const RegisterForm = () => {
       <div className="tp-login-input-wrapper">
         <div className="tp-login-input-box">
           <div className="tp-login-input">
-            <input
-              {...register("name", { required: `Name is required!` })}
-              id="name"
-              name="name"
-              type="text"
-              placeholder="Shahnewaz Sakil"
-            />
+            <input {...register("name", { required: `Name is required!` })} id="name" name="name" type="text" placeholder="Shahnewaz Sakil" />
           </div>
           <div className="tp-login-input-title">
-            <label htmlFor="name">Your Name</label>
+            <label htmlFor="name">Tên của bạn</label>
           </div>
           <ErrorMsg msg={errors.name?.message} />
         </div>
         <div className="tp-login-input-box">
           <div className="tp-login-input">
-            <input
-              {...register("email", { required: `Email is required!` })}
-              id="email"
-              name="email"
-              type="email"
-              placeholder="shofy@mail.com"
-            />
+            <input {...register("email", { required: `Email is required!` })} id="email" name="email" type="email" placeholder="shofy@mail.com" />
           </div>
           <div className="tp-login-input-title">
-            <label htmlFor="email">Your Email</label>
+            <label htmlFor="email">Địa chỉ email</label>
           </div>
           <ErrorMsg msg={errors.email?.message} />
         </div>
         <div className="tp-login-input-box">
           <div className="p-relative">
             <div className="tp-login-input">
-              <input
-                {...register("password", { required: `Password is required!` })}
-                id="password"
-                name="password"
-                type={showPass ? "text" : "password"}
-                placeholder="Min. 6 character"
-              />
+              <input {...register("password", { required: `Password is required!` })} id="password" name="password" type={showPass ? "text" : "password"} placeholder="Min. 6 character" />
             </div>
             <div className="tp-login-input-eye" id="password-show-toggle">
               <span className="open-eye" onClick={() => setShowPass(!showPass)}>
@@ -94,7 +76,7 @@ const RegisterForm = () => {
               </span>
             </div>
             <div className="tp-login-input-title">
-              <label htmlFor="password">Password</label>
+              <label htmlFor="password">Mật khẩu</label>
             </div>
           </div>
           <ErrorMsg msg={errors.password?.message} />
@@ -104,21 +86,21 @@ const RegisterForm = () => {
         <div className="tp-login-remeber">
           <input
             {...register("remember", {
-              required: `Terms and Conditions is required!`,
+              required: `Terms and Conditions is required!`
             })}
             id="remember"
             name="remember"
             type="checkbox"
           />
           <label htmlFor="remember">
-            I accept the terms of the Service & <a href="#">Privacy Policy</a>.
+            Tôi chấp nhận các điều khoản của Dịch vụ và <a href="#">Chính sách quyền riêng tư</a>.
           </label>
           <ErrorMsg msg={errors.remember?.message} />
         </div>
       </div>
       <div className="tp-login-bottom">
         <button type="submit" className="tp-login-btn w-100">
-          Sign Up
+          Đăng ký
         </button>
       </div>
     </form>

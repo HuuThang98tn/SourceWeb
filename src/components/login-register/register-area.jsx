@@ -16,9 +16,9 @@ const RegisterArea = () => {
             <div className="col-xl-6 col-lg-8">
               <div className="tp-login-wrapper">
                 <div className="tp-login-top text-center mb-30">
-                  <h3 className="tp-login-title">Sign Up Shofy.</h3>
+                  <h3 className="tp-login-title">Đăng ký với Shofy.</h3>
                   <p>
-                    Already have an account?{" "}
+                    Đã có tài khoản?{" "}
                     <span>
                       <Link href="/login">Đăng nhập</Link>
                     </span>
@@ -32,7 +32,7 @@ const RegisterArea = () => {
                   </div>
                   <div className="tp-login-mail text-center mb-40">
                     <p>
-                      or Sign up with <a href="#">Email</a>
+                      hoặc đăng ký với <a href="#">Email</a>
                     </p>
                   </div>
                   {/* form start */}

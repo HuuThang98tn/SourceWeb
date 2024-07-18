@@ -35,15 +35,15 @@ const BlogDetailsAreaTwo = ({blog}) => {
           <div className="row">
             <div className="col-xl-2 col-lg-2 col-md-2">
               <div className="tp-postbox-details-share-2">
-                <span>Share Now</span>
+                <span>Chia sẻ ngay</span>
                 <ul>
-                  {social_data.map(s => (
-                  <li key={s.id}>
-                    <a href={s.link} target="_blank" className='me-1'>
-                      <i className={s.icon}></i>
-                    </a>
-                  </li>
-                  )) }
+                  {social_data.map((s) => (
+                    <li key={s.id}>
+                      <a href={s.link} target="_blank" className="me-1">
+                        <i className={s.icon}></i>
+                      </a>
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>
@@ -52,7 +52,7 @@ const BlogDetailsAreaTwo = ({blog}) => {
                 <div className="tp-postbox-details-content">
                   <p className="tp-dropcap">sales process is critically important to the success of your reps and your business. If you have never seen a really skilled salesperson work, it seems almost effortless. They ask great questions, craftt perfect proposal, answer questions, address concerns and seamlessly seal the Underneath the surface of all of that, the salesperson has probably dedicated hours honing their craft and ensuring the process moves smoothly.</p>
 
-                  <p>One of the challenges that often surfaces when  working with a remote sales team is a lack of transparency over what is happening, and where in the process things are taking place. We’re going to peel back the curtain and show you how to create the best sales.</p>
+                  <p>One of the challenges that often surfaces when working with a remote sales team is a lack of transparency over what is happening, and where in the process things are taking place. We’re going to peel back the curtain and show you how to create the best sales.</p>
 
                   <h4 className="tp-postbox-details-heading">Breaking Up With Fast Fashion Has Been Easier</h4>
                   <p>Lommodo ligula eget dolor. Aenean massa. Cum sociis que penatibus magnis dis parturient montes lorem, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque euro, pretium, sem. Nulla onsequat massa quis enim. donec pede justo fringilla vel aliquet.</p>
@@ -100,7 +100,6 @@ const BlogDetailsAreaTwo = ({blog}) => {
                     </div>
                   </div>
 
-
                   {/* PostboxDetailsNav */}
                   <PostboxDetailsNav />
                   {/* PostboxDetailsNav */}
@@ -108,18 +107,17 @@ const BlogDetailsAreaTwo = ({blog}) => {
                   {/* author details start */}
                   <BlogDetailsAuthor />
                   {/* author details end */}
-
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="tp-postbox-related-area pt-115 pb-90 mb-110" style={{backgroundColor:'#F4F7F9'}}>
+        <div className="tp-postbox-related-area pt-115 pb-90 mb-110" style={{ backgroundColor: "#F4F7F9" }}>
           <div className="container">
             <div className="row">
               <div className="col-xl-12">
                 <div className="tp-postbox-related">
-                  <h3 className="tp-postbox-related-title">Related Articles</h3>
+                  <h3 className="tp-postbox-related-title">Những bài viết liên quan</h3>
 
                   <div className="row">
                     {related_blogs.map((blog) => (
@@ -137,15 +135,15 @@ const BlogDetailsAreaTwo = ({blog}) => {
           <div className="row justify-content-center">
             <div className="col-lg-8">
               <div className="tp-postbox-details-comment-wrapper">
-                <h3 className="tp-postbox-details-comment-title">Comments (2)</h3>
+                <h3 className="tp-postbox-details-comment-title">Bình luận (2)</h3>
                 {/* BlogDetailsComments */}
                 <BlogDetailsComments />
                 {/* BlogDetailsComments */}
               </div>
 
               <div className="tp-postbox-details-form">
-                <h3 className="tp-postbox-details-form-title">Leave a Reply</h3>
-                <p>Your email address will not be published. Required fields are marked *</p>
+                <h3 className="tp-postbox-details-form-title">Để lại một câu trả lời</h3>
+                <p>Địa chỉ email của bạn sẽ không được công bố. Các trường bắt buộc được đánh dấu *</p>
 
                 {/* form start */}
                 <BlogPostCommentForm />

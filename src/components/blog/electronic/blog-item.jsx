@@ -28,7 +28,7 @@ const BlogItem = ({blog}) => {
 
         <div className="tp-blog-btn">
           <Link href={`/blog-details/${blog.id}`} className="tp-btn-2 tp-btn-border-2">
-            Read More
+            Đọc thêm
             <span>
               <ArrowRightLong />
             </span>

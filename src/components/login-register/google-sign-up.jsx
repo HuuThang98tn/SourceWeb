@@ -16,7 +16,7 @@ const GoogleSignUp = () => {
     if (user) {
       signUpProvider(user?.credential).then((res) => {
         if (res?.data) {
-          notifySuccess("Login success!");
+          notifySuccess("Đăng nhập success!");
           router.push(redirect || "/");
         } else {
           console.log("result error -->", res.error);

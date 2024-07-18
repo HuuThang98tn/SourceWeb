@@ -36,7 +36,7 @@ const GridItem = ({ blog,style_2=false }) => {
 
           <div className="tp-blog-grid-btn">
             <Link href={`/blog-details/${id}`} className="tp-link-btn-3">
-              Read More{" "}
+              Đọc thêm{" "}
               <span>
                 <ArrowRightLong />
               </span>

@@ -111,7 +111,7 @@ const BlogDetailsArea = ({blog}) => {
 
                 <div className="tp-postbox-details-form">
                   <h3 className="tp-postbox-details-form-title">Leave a Reply</h3>
-                  <p>Your email address will not be published. Required fields are marked *</p>
+                  <p>Địa chỉ email của bạn sẽ không được công bố. Các trường bắt buộc được đánh dấu *</p>
 
                   {/* form start */}
                   <BlogPostCommentForm />

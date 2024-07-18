@@ -22,7 +22,7 @@ const CheckoutCoupon = ({ handleCouponCode, couponRef,couponApplyMsg }) => {
           <form onSubmit={handleCouponCode}>
             <div className="tp-return-customer-input">
               <label>Coupon Code :</label>
-              <input ref={couponRef} type="text" placeholder="Coupon" />
+              <input ref={couponRef} type="text" placeholder="Khuyến mãi" />
             </div>
             <button
               type="submit"
