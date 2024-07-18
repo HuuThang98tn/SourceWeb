@@ -56,7 +56,7 @@ const ProductSliderItem = ({ product }) => {
               className={`tp-product-action-btn-3 ${isAddedToCart ? 'active' : ''} tp-product-add-cart-btn`}
             >
               <Cart />
-              <span className="tp-product-tooltip">Add to Cart</span>
+              <span className="tp-product-tooltip">Thêm vào giỏ hàng</span>
             </button>
           )}
           <button
@@ -65,7 +65,7 @@ const ProductSliderItem = ({ product }) => {
             onClick={() => dispatch(handleProductModal(product))}
           >
             <QuickView />
-            <span className="tp-product-tooltip">Quick View</span>
+            <span className="tp-product-tooltip">Xem nhanh</span>
           </button>
           <button
             type="button"
@@ -73,7 +73,7 @@ const ProductSliderItem = ({ product }) => {
             className={`tp-product-action-btn-3 ${isAddedToWishlist ? 'active' : ''} tp-product-add-to-wishlist-btn`}
           >
             <Wishlist />
-            <span className="tp-product-tooltip">Add To Wishlist</span>
+            <span className="tp-product-tooltip">Thêm vào yêu thích</span>
           </button>
         </div>
       </div>
@@ -90,7 +90,7 @@ const ProductSliderItem = ({ product }) => {
               </Link>
             ) : (
               <button onClick={() => handleAddProduct(product)} className="tp-category-add-to-cart-4">
-                <AddCart />{" "}Add to Cart
+                <AddCart />{" "}Thêm vào giỏ hàng
               </button>
             )}
           </div>

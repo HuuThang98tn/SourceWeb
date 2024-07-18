@@ -118,7 +118,7 @@ const DetailsWrapper = ({ productItem, handleImageActive, activeImg, detailsBott
           <ProductQuantity />
           {/* product quantity */}
           <div className="tp-product-details-add-to-cart mb-15 w-100">
-            <button onClick={() => handleAddProduct(productItem)} disabled={status === 'out-of-stock'} className="tp-product-details-add-to-cart-btn w-100">Add To Cart</button>
+            <button onClick={() => handleAddProduct(productItem)} disabled={status === 'out-of-stock'} className="tp-product-details-add-to-cart-btn w-100">Thêm vào giỏ hàng</button>
           </div>
         </div>
         <Link href="/cart" onClick={() => dispatch(handleModalClose())}>

@@ -57,7 +57,7 @@ const ProductItem = ({ product, prdCenter = false,primary_style=false }) => {
                 disabled={status === 'out-of-stock'}
               >
                 <Cart />
-                <span className="tp-product-tooltip">Add to Cart</span>
+                <span className="tp-product-tooltip">Thêm vào giỏ hàng</span>
               </button>
             )}
             <button
@@ -65,13 +65,13 @@ const ProductItem = ({ product, prdCenter = false,primary_style=false }) => {
               className="tp-product-action-btn-3 tp-product-quick-view-btn"
             >
               <QuickView />
-              <span className="tp-product-tooltip">Quick View</span>
+              <span className="tp-product-tooltip">Xem nhanh</span>
             </button>
 
             <button disabled={status === 'out-of-stock'} onClick={()=> handleWishlistProduct(product)} className={`tp-product-action-btn-3 
             ${isAddedToWishlist?'active':''} tp-product-add-to-wishlist-btn`}>
               <Wishlist />
-              <span className="tp-product-tooltip">Add To Wishlist</span>
+              <span className="tp-product-tooltip">Thêm vào yêu thích</span>
             </button>
 
           </div>
@@ -92,7 +92,7 @@ const ProductItem = ({ product, prdCenter = false,primary_style=false }) => {
               className="tp-product-add-cart-btn-large"
               disabled={status === 'out-of-stock'}
             >
-              Add To Cart
+              Thêm vào giỏ hàng
             </button>
           )}
         </div>

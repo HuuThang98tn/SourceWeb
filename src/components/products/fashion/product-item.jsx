@@ -81,7 +81,7 @@ const ProductItem = ({ product, style_2 = false }) => {
               >
                 <Cart />
                 <span className="tp-product-tooltip tp-product-tooltip-right">
-                  Add to Cart
+                  Thêm vào giỏ hàng
                 </span>
               </button>
             )}
@@ -91,19 +91,19 @@ const ProductItem = ({ product, style_2 = false }) => {
             >
               <QuickView />
               <span className="tp-product-tooltip tp-product-tooltip-right">
-                Quick View
+                Xem nhanh
               </span>
             </button>
             <button disabled={status === 'out-of-stock'} onClick={() => handleWishlistProduct(product)} className={`tp-product-action-btn-2 ${isAddedToWishlist ? 'active' : ''} tp-product-add-to-wishlist-btn`}>
               <Wishlist />
               <span className="tp-product-tooltip tp-product-tooltip-right">
-                Add To Wishlist
+                Thêm vào yêu thích
               </span>
             </button>
             <button disabled={status === 'out-of-stock'} onClick={() => handleCompareProduct(product)} className="tp-product-action-btn-2 tp-product-add-to-compare-btn">
               <CompareThree />
               <span className="tp-product-tooltip tp-product-tooltip-right">
-                Add To Compare
+                Thêm vào so sánh
               </span>
             </button>
           </div>

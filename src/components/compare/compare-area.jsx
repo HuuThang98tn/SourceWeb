@@ -83,14 +83,14 @@ const CompareArea = () => {
                           </td>
                         ))}
                       </tr>
-                      {/* Add to cart*/}
+                      {/* Thêm vào giỏ hàng*/}
                       <tr>
-                        <th>Add to cart</th>
+                        <th>Thêm vào giỏ hàng</th>
                         {compareItems.map(item => (
                           <td key={item._id}>
                             <div className="tp-compare-add-to-cart">
                               <button onClick={() => handleAddProduct(item)} type="button" className="tp-btn">
-                                Add to Cart
+                                Thêm vào giỏ hàng
                               </button>
                             </div>
                           </td>

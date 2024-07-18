@@ -53,7 +53,7 @@ const ProductItem = ({ product }) => {
                 disabled={status === 'out-of-stock'}
               >
                 <Cart />
-                <span className="tp-product-tooltip">Add to Cart</span>
+                <span className="tp-product-tooltip">Thêm vào giỏ hàng</span>
               </button>
             )}
             <button
@@ -62,7 +62,7 @@ const ProductItem = ({ product }) => {
               onClick={() => dispatch(handleProductModal(product))}
             >
               <QuickView />
-              <span className="tp-product-tooltip">Quick View</span>
+              <span className="tp-product-tooltip">Xem nhanh</span>
             </button>
             <button
               type="button"
@@ -71,7 +71,7 @@ const ProductItem = ({ product }) => {
               disabled={status === 'out-of-stock'}
             >
               <Wishlist />
-              <span className="tp-product-tooltip">Add To Wishlist</span>
+              <span className="tp-product-tooltip">Thêm vào yêu thích</span>
             </button>
           </div>
         </div>
@@ -92,7 +92,7 @@ const ProductItem = ({ product }) => {
             {isAddedToCart ? <Link href="/cart" className="tp-product-add-to-cart-4">
               <AddCart /> View Cart
             </Link> : <button disabled={status === 'out-of-stock'} onClick={()=> handleAddProduct(product)} className="tp-product-add-to-cart-4">
-              <AddCart /> Add to Cart
+              <AddCart /> Thêm vào giỏ hàng
             </button>}
           </div>
         </div>

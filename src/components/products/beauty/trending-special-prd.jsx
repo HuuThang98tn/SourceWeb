@@ -37,10 +37,10 @@ const TrendingSpecialPrd = () => {
     );
   }
   if (!isLoading && isError) {
-    content = <ErrorMsg msg="There was an error" />;
+    content = <ErrorMsg msg="Có lỗi" />;
   }
   if (!isLoading && !isError && products?.data?.length === 0) {
-    content = <ErrorMsg msg="No Products found!" />;
+    content = <ErrorMsg msg="Không có sản phẩm được tìm thấy!" />;
   }
   if (!isLoading && !isError && products?.data?.length > 0) {
     const product_items = products.data.slice(0, 7);
@@ -68,8 +68,8 @@ const TrendingSpecialPrd = () => {
                       <PlusTwo />
                     </span>
                     <div className="tp-special-hotspot-content">
-                      <h3 className="tp-special-hotspot-title">Skincare Product</h3>
-                      <p>Lorem ipsum dolor sit amet consectetur.</p>
+                      <h3 className="tp-special-hotspot-title">Sản phẩm chăm sóc da mặt</h3>
+                      {/* <p>Lorem ipsum dolor sit amet consectetur.</p> */}
                     </div>
                   </div>
                   <div className="tp-special-hotspot-item tp-special-hotspot-2">
@@ -77,8 +77,8 @@ const TrendingSpecialPrd = () => {
                       <PlusTwo />
                     </span>
                     <div className="tp-special-hotspot-content">
-                      <h3 className="tp-special-hotspot-title">Skincare Product</h3>
-                      <p>Lorem ipsum dolor sit amet consectetur.</p>
+                      <h3 className="tp-special-hotspot-title">Sản phẩm chăm sóc da, dưỡng thể</h3>
+                      {/* <p>Lorem ipsum dolor sit amet consectetur.</p> */}
                     </div>
                   </div>
 
@@ -88,8 +88,8 @@ const TrendingSpecialPrd = () => {
             <div className="col-xl-7 col-md-6">
               <div className="tp-special-wrapper grey-bg-9 pt-85 pb-35">
                 <div className="tp-section-title-wrapper-3 mb-40 text-center">
-                  <span className="tp-section-title-pre-3">Trending This Week’s</span>
-                  <h3 className="tp-section-title-3">Special products</h3>
+                  <span className="tp-section-title-pre-3">Xu hướng tuần này</span>
+                  <h3 className="tp-section-title-3">Sản phẩm đặc biệt</h3>
                 </div>
                 <div className="tp-special-slider ">
                   <div className="row gx-0 justify-content-center">

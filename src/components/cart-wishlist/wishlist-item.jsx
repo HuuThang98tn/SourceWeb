@@ -67,7 +67,7 @@ const WishlistItem = ({ product }) => {
           type="button"
           className="tp-btn tp-btn-2 tp-btn-blue"
         >
-          Add To Cart
+          Thêm vào giỏ hàng
         </button>
       </td>
 

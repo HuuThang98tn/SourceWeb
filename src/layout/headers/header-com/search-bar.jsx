@@ -10,7 +10,7 @@ const SearchBar = ({ isSearchOpen, setIsSearchOpen }) => {
     setCategory(value);
   };
 
-  const categories = ["electronics", "fashion", "beauty", "jewelry"];
+  const categories = ["Thiết bị điện tử", "Thời trang", "Làm đẹp", "Trang sức"];
   return (
     <>
       <section
@@ -34,7 +34,7 @@ const SearchBar = ({ isSearchOpen, setIsSearchOpen }) => {
                       onChange={(e) => setSearchText(e.target.value)}
                       value={searchText}
                       type="text"
-                      placeholder="Search for product..."
+                      placeholder="Tìm kiếm sản phẩm..."
                     />
                     <button type="submit">
                       <i className="flaticon-search-1"></i>

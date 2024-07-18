@@ -68,39 +68,45 @@ const BeautyBanner = () => {
   return (
     <>
       <section className="tp-slider-area p-relative z-index-1">
-        <Swiper
-          {...slider_setting}
-          modules={[Navigation, EffectFade, Pagination]}
-          className="tp-slider-active-3 swiper-container"
-        >
+        <Swiper {...slider_setting} modules={[Navigation, EffectFade, Pagination]} className="tp-slider-active-3 swiper-container">
           {slider_data.map((item) => (
-            <SwiperSlide
-              key={item.id}
-              className="tp-slider-item-3 tp-slider-height-3 p-relative black-bg d-flex align-items-center"
-            >
-              <div
-                className="tp-slider-thumb-3 include-bg"
-                style={{ backgroundImage: `url(${item.bg.src})` }}
-              ></div>
+            <SwiperSlide key={item.id} className="tp-slider-item-3 tp-slider-height-3 p-relative black-bg d-flex align-items-center">
+              <div className="tp-slider-thumb-3 include-bg" style={{ backgroundImage: `url(${item.bg.src})` }}></div>
               <div className="container">
                 <div className="row align-items-center">
                   <div className="col-xl-6 col-lg-6 col-md-8">
                     <div className="tp-slider-content-3">
-                      <span>Winter Collection 2023</span>
-                      <h3 className="tp-slider-title-3">
-                        Be your kind of beauty
-                      </h3>
+                      <span>Bộ sưu tập mùa đông</span>
+                      <h3 className="tp-slider-title-3">Vẻ đẹp của bạn</h3>
                       <div className="tp-slider-feature-3 d-flex flex-wrap align-items-center p-relative z-index-1 mb-15">
-                        <FeatureItem icon={<Cosmetics />} title={<>High-end <br /> Cosmetics</>} />
-                        <FeatureItem icon={<VeganProduct />} title={<>Vegan <br /> Product</>} />
-                        <FeatureItem icon={<Meckoup />} title={<>Express <br /> Make-up</>} />
+                        <FeatureItem
+                          icon={<Cosmetics />}
+                          title={
+                            <>
+                              Mỹ phẩm <br /> Cao cấp
+                            </>
+                          }
+                        />
+                        <FeatureItem
+                          icon={<VeganProduct />}
+                          title={
+                            <>
+                              Sản phẩm <br /> bán chạy
+                            </>
+                          }
+                        />
+                        <FeatureItem
+                          icon={<Meckoup />}
+                          title={
+                            <>
+                              Trang điểm <br /> nhanh
+                            </>
+                          }
+                        />
                       </div>
                       <div className="tp-slider-btn-3">
-                        <Link
-                          href="/shop"
-                          className="tp-btn tp-btn-border tp-btn-border-white"
-                        >
-                          Discover Now
+                        <Link href="/shop" className="tp-btn tp-btn-border tp-btn-border-white">
+                          Khám phá ngay
                         </Link>
                       </div>
                     </div>
