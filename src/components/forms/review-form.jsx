@@ -33,7 +33,7 @@ const ReviewForm = ({product_id}) => {
   // on submit
   const onSubmit = (data) => {
     if(!user){
-      notifyError("Please login first");
+      notifyError("Vui lòng đăng nhập");
       return;
     }
     else {
@@ -56,7 +56,7 @@ const ReviewForm = ({product_id}) => {
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
       <div className="tp-product-details-review-form-rating d-flex align-items-center">
-        <p>Your Rating :</p>
+        <p>Đánh giá của bạn :</p>
         <div className="tp-product-details-review-form-rating-icon d-flex align-items-center">
           <Rating onClick={handleRating} allowFraction size={16} initialValue={rating} />
         </div>
@@ -72,7 +72,7 @@ const ReviewForm = ({product_id}) => {
             />
           </div>
           <div className="tp-product-details-review-input-title">
-            <label htmlFor="msg">Your Review</label>
+            <label htmlFor="msg">Nhận xét</label>
           </div>
           <ErrorMsg msg={errors.name?.comment} />
         </div>
@@ -87,7 +87,7 @@ const ReviewForm = ({product_id}) => {
             />
           </div>
           <div className="tp-product-details-review-input-title">
-            <label htmlFor="name">Your Name</label>
+            <label htmlFor="name">Tên của bạn</label>
           </div>
           <ErrorMsg msg={errors.name?.name} />
         </div>
@@ -102,13 +102,13 @@ const ReviewForm = ({product_id}) => {
             />
           </div>
           <div className="tp-product-details-review-input-title">
-            <label htmlFor="email">Your Email</label>
+            <label htmlFor="email">Địa chỉ email</label>
           </div>
           <ErrorMsg msg={errors.name?.email} />
         </div>
       </div>
       <div className="tp-product-details-review-btn-wrapper">
-        <button type="submit" className="tp-product-details-review-btn">Submit</button>
+        <button type="submit" className="tp-product-details-review-btn">Gửi</button>
       </div>
     </form>
   );

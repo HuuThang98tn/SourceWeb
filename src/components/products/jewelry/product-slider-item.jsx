@@ -47,7 +47,7 @@ const ProductSliderItem = ({ product }) => {
               className={`tp-product-action-btn-3 ${isAddedToCart ? 'active' : ''} tp-product-add-cart-btn`}
             >
               <Cart />
-              <span className="tp-product-tooltip">View Cart</span>
+              <span className="tp-product-tooltip">Xem giỏ hàng</span>
             </Link>
           ) : (
             <button
@@ -86,7 +86,7 @@ const ProductSliderItem = ({ product }) => {
           <div className="tp-category-add-to-cart">
             {isAddedToCart ? (
               <Link href="/cart" className="tp-category-add-to-cart-4">
-                <AddCart />{" "}View Cart
+                <AddCart />{" "}Xem giỏ hàng
               </Link>
             ) : (
               <button onClick={() => handleAddProduct(product)} className="tp-category-add-to-cart-4">

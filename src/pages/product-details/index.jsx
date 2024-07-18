@@ -30,7 +30,7 @@ const ProductDetailsPage = ({ query }) => {
   }
   return (
     <Wrapper>
-      <SEO pageTitle="Product Details" />
+      <SEO pageTitle="Chi tiết sản phẩm" />
       <HeaderTwo style_2={true} />
       {content}
       <Footer primary_style={true} />

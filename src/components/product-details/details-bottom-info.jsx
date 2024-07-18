@@ -24,7 +24,7 @@ const DetailsBottomInfo = ({sku,category,tag}) => {
       {/*  product-details-social*/}
 
       <div className="tp-product-details-social">
-        <span>Share: </span>
+        <span>Chia sẻ: </span>
         <a href="#">
           <i className="fa-brands fa-facebook-f"></i>
         </a>
@@ -43,15 +43,16 @@ const DetailsBottomInfo = ({sku,category,tag}) => {
 
       <div className="tp-product-details-msg mb-15">
         <ul>
-          <li>30 days easy returns</li>
-          <li>Order yours before 2.30pm for same day dispatch</li>
+          <li>30 ngày hoàn trả dễ dàng</li>
+          <li>Đặt hàng trước 2h30 chiều để được giao hàng trong ngày</li>
         </ul>
       </div>
       {/* product-details-payment */}
       <div className="tp-product-details-payment d-flex align-items-center flex-wrap justify-content-between">
         <p>
-          Guaranteed safe <br /> & secure checkout
+          Đảm bảo an toàn thanh toán
         </p>
+        <br/>
         <Image src={payment_option_img} alt="payment_option_img" />
       </div>
     </>

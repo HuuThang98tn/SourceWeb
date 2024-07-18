@@ -47,7 +47,7 @@ const ProductItem = ({ product, prdCenter = false,primary_style=false }) => {
                 className={`tp-product-action-btn-3 ${isAddedToCart?'active':''} tp-product-add-cart-btn text-center`}
               >
                 <Cart />
-                <span className="tp-product-tooltip">View Cart</span>
+                <span className="tp-product-tooltip">Xem giỏ hàng</span>
               </Link>
             ) : (
               <button

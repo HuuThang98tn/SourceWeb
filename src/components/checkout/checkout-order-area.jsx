@@ -45,7 +45,7 @@ const CheckoutOrderArea = ({ checkoutData }) => {
 
           {/*  shipping */}
           <li className="tp-order-info-list-shipping">
-            <span>Shipping</span>
+            <span>Vận chuyển</span>
             <div className="tp-order-info-list-shipping-item d-flex flex-column align-items-end">
               <span>
                 <input
@@ -86,7 +86,7 @@ const CheckoutOrderArea = ({ checkoutData }) => {
 
            {/*  subtotal */}
            <li className="tp-order-info-list-subtotal">
-            <span>Subtotal</span>
+            <span>Tạm tính</span>
             <span>${total.toFixed(2)}</span>
           </li>
 

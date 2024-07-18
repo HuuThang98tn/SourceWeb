@@ -43,7 +43,7 @@ const ProductItem = ({ product }) => {
                 className={`tp-product-action-btn-3 ${isAddedToCart ? 'active' : ''} tp-product-add-cart-btn text-center`}
               >
                 <Cart />
-                <span className="tp-product-tooltip">View Cart</span>
+                <span className="tp-product-tooltip">Xem giỏ hàng</span>
               </Link>
             ) : (
               <button
@@ -90,7 +90,7 @@ const ProductItem = ({ product }) => {
           </div>
           <div className="tp-product-price-add-to-cart">
             {isAddedToCart ? <Link href="/cart" className="tp-product-add-to-cart-4">
-              <AddCart /> View Cart
+              <AddCart /> Xem giỏ hàng
             </Link> : <button disabled={status === 'out-of-stock'} onClick={()=> handleAddProduct(product)} className="tp-product-add-to-cart-4">
               <AddCart /> Thêm vào giỏ hàng
             </button>}

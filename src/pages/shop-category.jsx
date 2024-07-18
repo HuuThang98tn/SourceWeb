@@ -9,9 +9,9 @@ import ShopCategoryArea from '@/components/categories/shop-category-area';
 const CategoryPage = () => {
   return (
     <Wrapper>
-      <SEO pageTitle="Shop Category" />
+      <SEO pageTitle="Danh mục sản phẩm" />
       <HeaderTwo style_2={true} />
-      <ShopBreadcrumb title="Only Categories" subtitle="Only Categories" />
+      <ShopBreadcrumb title="Danh mục" subtitle="Danh mục" />
       <ShopCategoryArea/>
       <Footer primary_style={true} />
     </Wrapper>

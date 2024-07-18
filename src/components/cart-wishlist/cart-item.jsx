@@ -57,7 +57,7 @@ const CartItem = ({product}) => {
       <td className="tp-cart-action">
         <button onClick={()=> handleRemovePrd({title,id:_id})} className="tp-cart-action-btn">
           <Close />
-          <span>{" "}Remove</span>
+          <span>{" "}Xoá</span>
         </button>
       </td>
     </tr>

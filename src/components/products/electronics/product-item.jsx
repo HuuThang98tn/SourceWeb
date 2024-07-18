@@ -70,7 +70,7 @@ const ProductItem = ({ product, offer_style = false }) => {
                   href="/cart"
                   className={`tp-product-action-btn ${isAddedToCart ? 'active' : ''} tp-product-add-cart-btn`}
                 >
-                  <Cart /> <span className="tp-product-tooltip">View Cart</span>
+                  <Cart /> <span className="tp-product-tooltip">Xem giỏ hàng</span>
                 </Link>
               ) : (
                 <button

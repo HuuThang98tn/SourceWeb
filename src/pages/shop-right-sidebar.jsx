@@ -64,7 +64,7 @@ const ShopRightSidebarPage = ({ query }) => {
     let product_items = products.data;
     // select short filtering 
     if (selectValue) {
-      if (selectValue === 'Default Sorting') {
+      if (selectValue === 'Sắp xếp mặc định') {
         product_items = products.data
       }
       else if (selectValue === 'Low to High') {

@@ -77,7 +77,7 @@ const WishlistItem = ({ product }) => {
           className="tp-cart-action-btn"
         >
           <Close />
-          <span> Remove</span>
+          <span> Xoá</span>
         </button>
       </td>
     </tr>

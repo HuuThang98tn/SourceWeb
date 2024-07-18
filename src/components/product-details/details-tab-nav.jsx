@@ -45,9 +45,9 @@ const DetailsTabNav = ({ product }) => {
       <div className="tp-product-details-tab-nav tp-tab">
         <nav>
           <div className="nav nav-tabs justify-content-center p-relative tp-product-tab" id="navPresentationTab" role="tablist">
-            <NavItem active={true} linkRef={activeRef} id="desc" title="Description" />
-            <NavItem id="additional" title="Additional information" />
-            <NavItem id="review" title={`Reviews (${reviews.length})`} />
+            <NavItem active={true} linkRef={activeRef} id="desc" title="Mô tả sản phẩm" />
+            <NavItem id="additional" title="Thông tin thêm" />
+            <NavItem id="review" title={`Đánh giá (${reviews.length})`} />
 
             <span ref={marker} id="productTabMarker" className="tp-product-details-tab-line"></span>
           </div>
@@ -73,7 +73,6 @@ const DetailsTabNav = ({ product }) => {
           </div>
           {/* addInfo */}
           <div className="tab-pane fade" id="nav-additional" role="tabpanel" aria-labelledby="nav-additional-tab" tabIndex="-1">
-
             <div className="tp-product-details-additional-info ">
               <div className="row justify-content-center">
                 <div className="col-xl-10">
@@ -97,24 +96,18 @@ const DetailsTabNav = ({ product }) => {
               <div className="row">
                 <div className="col-lg-6">
                   <div className="tp-product-details-review-statics">
-
                     {/* reviews */}
                     <div className="tp-product-details-review-list pr-110">
-                      <h3 className="tp-product-details-review-title">Rating & Review</h3>
-                      {reviews.length === 0 && <h3 className="tp-product-details-review-title">
-                        There are no reviews yet.
-                      </h3>
-                      }
-                      {reviews.length > 0 && reviews.map(item => (
-                        <ReviewItem key={item._id} review={item} />
-                      ))}
+                      <h3 className="tp-product-details-review-title">Đánh giá và nhận xét</h3>
+                      {reviews.length === 0 && <h3 className="tp-product-details-review-title">Hiện tại không có đánh giá nào.</h3>}
+                      {reviews.length > 0 && reviews.map((item) => <ReviewItem key={item._id} review={item} />)}
                     </div>
                   </div>
                 </div>
                 <div className="col-lg-6">
                   <div className="tp-product-details-review-form">
-                    <h3 className="tp-product-details-review-form-title">Review this product</h3>
-                    <p>Your email address will not be published. Required fields are marked *</p>
+                    <h3 className="tp-product-details-review-form-title">Đánh giá sản phẩm</h3>
+                    <p>Địa chỉ email của bạn sẽ không được công bố. Các trường bắt buộc được đánh dấu *</p>
                     {/* form start */}
                     <ReviewForm product_id={_id} />
                     {/* form end */}

@@ -69,7 +69,7 @@ const ProductItem = ({ product, style_2 = false }) => {
               >
                 <Cart />
                 <span className="tp-product-tooltip tp-product-tooltip-right">
-                  View Cart
+                  Xem giỏ hàng
                 </span>
               </Link>
             ) : (

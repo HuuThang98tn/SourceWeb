@@ -83,7 +83,7 @@ const BlogDetailsArea = ({blog}) => {
                     </div>
                     <div className="col-xl-4 col-lg-6">
                       <div className="tp-postbox-details-share text-md-end">
-                        <span>Share:</span>
+                        <span>Chia sẻ:</span>
                         {social_data.map((s) => (
                           <a href={s.link} className="me-1" target="_blank" key={s.id}>
                             <i className={s.icon}></i>

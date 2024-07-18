@@ -58,7 +58,7 @@ const FooterTwo = () => {
                     <div className="tp-footer-widget-content">
                       <ul>
                         <li><a href="#">Track Orders</a></li>
-                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Vận chuyển</a></li>
                         <li><a href="#">Wishlist</a></li>
                         <li><a href="#">My Account</a></li>
                         <li><a href="#">Order History</a></li>

@@ -25,25 +25,12 @@ const ProductDetailsArea = ({ productItem }) => {
           <div className="row">
             <div className="col-xl-7 col-lg-6">
               {/* product-details-thumb-wrapper start */}
-              <DetailsThumbWrapper
-                activeImg={activeImg}
-                handleImageActive={handleImageActive}
-                imageURLs={imageURLs}
-                imgWidth={580}
-                imgHeight={670}
-                videoId={videoId}
-                status={status}
-              />
+              <DetailsThumbWrapper activeImg={activeImg} handleImageActive={handleImageActive} imageURLs={imageURLs} imgWidth={580} imgHeight={670} videoId={videoId} status={status} />
               {/* product-details-thumb-wrapper end */}
             </div>
             <div className="col-xl-5 col-lg-6">
               {/* product-details-wrapper start */}
-              <DetailsWrapper
-                productItem={productItem}
-                handleImageActive={handleImageActive}
-                activeImg={activeImg}
-                detailsBottom={true}
-              />
+              <DetailsWrapper productItem={productItem} handleImageActive={handleImageActive} activeImg={activeImg} detailsBottom={true} />
               {/* product-details-wrapper end */}
             </div>
           </div>
@@ -67,8 +54,8 @@ const ProductDetailsArea = ({ productItem }) => {
         <div className="container">
           <div className="row">
             <div className="tp-section-title-wrapper-6 text-center mb-40">
-              <span className="tp-section-title-pre-6">Next day Products</span>
-              <h3 className="tp-section-title-6">Related Products</h3>
+              <span className="tp-section-title-pre-6">Sản phẩm ngày hôm sau</span>
+              <h3 className="tp-section-title-6">Những sảm phẩm tương tự</h3>
             </div>
           </div>
           <div className="row">

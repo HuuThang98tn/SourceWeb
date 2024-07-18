@@ -38,7 +38,7 @@ const ShopFilterOffCanvas = ({
               className="tp-filter-offcanvas-close-btn filter-close-btn"
             >
               <i className="fa-solid fa-xmark"></i>
-              {" "}Close
+              {" "}Đóng
             </button>
           </div>
           <div className="tp-shop-sidebar">

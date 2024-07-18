@@ -90,7 +90,7 @@ const SingleOrder = ({ params }) => {
                     <tr>
                       <th scope="col">SL</th>
                       <th scope="col">Product Name</th>
-                      <th scope="col">Quantity</th>
+                      <th scope="col">Số lượng</th>
                       <th scope="col">Item Price</th>
                       <th scope="col">Amount</th>
                     </tr>

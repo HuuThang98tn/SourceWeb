@@ -63,21 +63,21 @@ const ShopPage = ({ query }) => {
     let product_items = products.data;
     // select short filtering
     if (selectValue) {
-      if (selectValue === "Default Sorting") {
+      if (selectValue === "Sắp xếp mặc định") {
         product_items = products.data;
-      } else if (selectValue === "Low to High") {
+      } else if (selectValue === "Từ thấp đến cao") {
         product_items = products.data
           .slice()
           .sort((a, b) => Number(a.price) - Number(b.price));
-      } else if (selectValue === "High to Low") {
+      } else if (selectValue === "Từ cao đến thấp") {
         product_items = products.data
           .slice()
           .sort((a, b) => Number(b.price) - Number(a.price));
-      } else if (selectValue === "New Added") {
+      } else if (selectValue === "Mới thêm") {
         product_items = products.data
           .slice()
           .sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
-      } else if (selectValue === "On Sale") {
+      } else if (selectValue === "Trên sàn") {
         product_items = products.data.filter((p) => p.discount > 0);
       } else {
         product_items = products.data;
@@ -159,7 +159,7 @@ const ShopPage = ({ query }) => {
     <Wrapper>
       <SEO pageTitle="Shop" />
       <HeaderTwo style_2={true} />
-      <ShopBreadcrumb title="Shop Grid" subtitle="Shop Grid" />
+      <ShopBreadcrumb title="Danh sách sản phẩm" subtitle="Danh sách sản phẩm" />
       {content}
       <Footer primary_style={true} />
     </Wrapper>

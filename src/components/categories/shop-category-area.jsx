@@ -46,7 +46,7 @@ const ShopCategoryArea = () => {
               <a className="cursor-pointer">{item.parent}</a>
             </h3>
             <span className="tp-category-main-item">
-              {item.products.length} Products
+              {item.products.length} Sản phẩm
             </span>
           </div>
         </div>

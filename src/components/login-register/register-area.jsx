@@ -20,7 +20,7 @@ const RegisterArea = () => {
                   <p>
                     Already have an account?{" "}
                     <span>
-                      <Link href="/login">Sign In</Link>
+                      <Link href="/login">Đăng nhập</Link>
                     </span>
                   </p>
                 </div>

@@ -9,36 +9,18 @@ const RenderCartProgress = () => {
     const remainingAmount = freeShippingThreshold - total;
     return (
       <>
-        <p>{`Add $${remainingAmount.toFixed(
-          2
-        )} more to qualify for free shipping`}</p>
+        <p>{`Thêm $${remainingAmount.toFixed(2)} hoặc nhiều hơn nữa để đủ điều kiện được miễn phí vận chuyển`}</p>
         <div className="progress">
-          <div
-            className="progress-bar progress-bar-striped progress-bar-animated"
-            role="progressbar"
-            data-width={`${progress}%`}
-            aria-valuenow={progress}
-            aria-valuemin="0"
-            aria-valuemax="100"
-            style={{ width: `${progress}%` }}
-          ></div>
+          <div className="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" data-width={`${progress}%`} aria-valuenow={progress} aria-valuemin="0" aria-valuemax="100" style={{ width: `${progress}%` }}></div>
         </div>
       </>
     );
   }
   return (
     <>
-      <p> You are eligible for free shipping</p>
+      <p> Bạn đủ điều kiện để được miễn phí vận chuyển</p>
       <div className="progress">
-        <div
-          className="progress-bar progress-bar-striped progress-bar-animated"
-          role="progressbar"
-          data-width={`${progress}%`}
-          aria-valuenow={progress}
-          aria-valuemin="0"
-          aria-valuemax="100"
-          style={{ width: `${progress}%` }}
-        ></div>
+        <div className="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" data-width={`${progress}%`} aria-valuenow={progress} aria-valuemin="0" aria-valuemax="100" style={{ width: `${progress}%` }}></div>
       </div>
     </>
   );
